@@ -115,18 +115,19 @@ public class Auction
     
     public ArrayList<Lot> getUnsold(){
         ArrayList<Lot> unsold = new ArrayList<>();
-        int soldCounting = 0;
         for(Lot t : listOfLots){
             Balls y = t.getHighestBid();
             
             if(y == null){
                 unsold.add(t);
-            } else{
-                soldCounting++;
-            }
-            System.out.println("About " + t.getNumber() + " Are sold, Sorry man");
-            }
-            return unsold;
+            } 
+        }
+        System.out.println("Heres a list of all the unsolds: ");
+        
+        for(Lot r : unsold){
+            System.out.println(r);
+        }
+        return unsold;
     }
 }
 
