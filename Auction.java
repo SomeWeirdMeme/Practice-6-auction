@@ -125,7 +125,7 @@ public class Auction
         System.out.println("Heres a list of all the unsolds: ");
         
         for(Lot r : unsold){
-            System.out.println(r);
+            System.out.println(r.toString());
         }
         return unsold;
     }
